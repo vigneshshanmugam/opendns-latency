@@ -1,15 +1,14 @@
-var koa = require('koa'),
-	app = koa(),
-	logger = require('koa-logger'),
-	route = require('koa-route'),
-	staticDir = require('koa-static'),
-	port = process.env.PORT || 3000,
-	dns = require('dns');
+var express = require('express'),
+  app = express(),
+  http = require('http'),
+  fs = require('fs'),
+  port = process.env.PORT || 3000;
 
-app.use(logger());
+app.use('/public', express.static(__dirname + '/public'));
+app.get('/*', function(req, res) {
+  res.end(fs.readFileSync('index.html'));
+});
 
-app.use(staticDir('./'));
-
-app.listen(port, function() {
-	console.log("Koa server listening on port %s", port);
+http.createServer(app).listen(port, function(err) {
+  console.log('Express server running on port', port);
 });

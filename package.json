@@ -4,20 +4,30 @@
   "description": "Testing the Fastest Public DNS from Your Location",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "serve": "node server.js",
+    "start": "npm run build && npm run serve"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vigneshshanmugam/opendns-latency.git"
   },
   "keywords": [
-    "public",
-    "DNS"
+    "public DNS"
   ],
   "author": "Vignesh Shanmugam <vignesh.shanmugam22@gmail.com> (https://vigneshh.in)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/vigneshshanmugam/opendns-latency/issues"
   },
-  "homepage": "https://github.com/vigneshshanmugam/opendns-latency#readme"
+  "homepage": "https://github.com/vigneshshanmugam/opendns-latency#readme",
+  "devDependencies": {
+    "babel-loader": "^5.3.1",
+    "babel-runtime": "^5.6.15",
+    "express": "^4.13.0",
+    "fs": "0.0.2",
+    "http": "0.0.0",
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.10.1"
+  }
 }

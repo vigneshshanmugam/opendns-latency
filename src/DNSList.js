@@ -1,6 +1,6 @@
-export default DNS_PROVIDERS = {
+const DNS_PROVIDERS = {
   "Comodo"  : "8.26.56.26",
-  "Dyn"     : "216.146.35.35"
+  "Dyn"     : "216.146.35.35",
   "FreeDNS" : "37.235.1.174",
   "Google"  : "8.8.8.8",
   "Level"   : "3 209.244.0.3",
@@ -9,3 +9,5 @@ export default DNS_PROVIDERS = {
   "OpenNIC" : "107.150.40.234",
   "SafeDNS" : "195.46.39.39"
 }
+
+export default DNS_PROVIDERS;

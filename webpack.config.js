@@ -3,7 +3,7 @@ module.exports = {
 		app: './index.js'
 	},
 	output: {
-		path: './static',
+		path: './public',
 		filename: '[name].bundle.js',
 		libraryTarget: 'this'
 	},

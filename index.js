@@ -1,2 +1,3 @@
-var allDNS = require('./src/OpenDNS'),
-    path = require('path');
+import DNS_PROVIDERS from './src/DNSList';
+
+console.log(DNS_PROVIDERS);
