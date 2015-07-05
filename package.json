@@ -1,0 +1,23 @@
+{
+  "name": "opendns-latency",
+  "version": "1.0.0",
+  "description": "Testing the Fastest Public DNS from Your Location",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vigneshshanmugam/opendns-latency.git"
+  },
+  "keywords": [
+    "public",
+    "DNS"
+  ],
+  "author": "Vignesh Shanmugam <vignesh.shanmugam22@gmail.com> (https://vigneshh.in)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vigneshshanmugam/opendns-latency/issues"
+  },
+  "homepage": "https://github.com/vigneshshanmugam/opendns-latency#readme"
+}
